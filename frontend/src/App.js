@@ -137,9 +137,18 @@ function App() {
             working alongside senior engineers. Helped model motor mounts, planetary actuator housings, gear reduction stages, 
             and bevel gear assemblies. Assisted with actuator assembly layouts to verify component fit, alignment, and clearance.
           </p>
-          <div className="project-placeholder" data-testid="robotic-arm-placeholder">
-            <div className="placeholder-icon">🤖</div>
-            <div className="placeholder-text">Shoulder Actuator CAD Model</div>
+          <div className="img-grid">
+            <div 
+              className="img-wrap" 
+              onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/87utk7i1_image.png")}
+            >
+              <img 
+                src="https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/87utk7i1_image.png" 
+                alt="Shoulder Actuator Assembly"
+                data-testid="robotic-arm-image"
+              />
+              <div className="img-caption">Shoulder Actuator Assembly</div>
+            </div>
           </div>
         </div>
       </section>
