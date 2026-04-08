@@ -85,17 +85,61 @@ function App() {
             then assembled with concentric and coincident mates. Applied circular patterns for the 30-element impinging orifice layout 
             and used spline curves and Shell feature for the complex nozzle geometry.
           </p>
-          <div className="img-grid img-grid-featured">
+          <div className="img-grid img-grid-rocket">
             <div 
-              className="img-wrap span-2" 
+              className="img-wrap img-featured" 
+              onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/27og3rn3_rocket-full-assembly.jpg")}
+            >
+              <img 
+                src="https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/27og3rn3_rocket-full-assembly.jpg" 
+                alt="Full Assembly"
+                data-testid="rocket-full-assembly"
+              />
+              <div className="img-caption">Full Assembly</div>
+            </div>
+            <div 
+              className="img-wrap" 
               onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/gioe6696_image.png")}
             >
               <img 
                 src="https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/gioe6696_image.png" 
-                alt="Top Orifice Model for Liquid Rocket Injector"
-                data-testid="rocket-injector-image"
+                alt="Top Orifice Model"
+                data-testid="rocket-top-orifice"
               />
-              <div className="img-caption">Top Orifice Model for Liquid Rocket Injector</div>
+              <div className="img-caption">Top Orifice Model</div>
+            </div>
+            <div 
+              className="img-wrap" 
+              onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/fojy47lt_rocket-top-manifold.jpg")}
+            >
+              <img 
+                src="https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/fojy47lt_rocket-top-manifold.jpg" 
+                alt="Top Manifold"
+                data-testid="rocket-top-manifold"
+              />
+              <div className="img-caption">Top Manifold</div>
+            </div>
+            <div 
+              className="img-wrap" 
+              onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/we0hocuz_rocket-base-manifold.jpg")}
+            >
+              <img 
+                src="https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/we0hocuz_rocket-base-manifold.jpg" 
+                alt="Base Manifold"
+                data-testid="rocket-base-manifold"
+              />
+              <div className="img-caption">Base Manifold</div>
+            </div>
+            <div 
+              className="img-wrap" 
+              onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/7xecpvz7_rocket-chamber-throat.jpg")}
+            >
+              <img 
+                src="https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/7xecpvz7_rocket-chamber-throat.jpg" 
+                alt="Chamber Throat"
+                data-testid="rocket-chamber-throat"
+              />
+              <div className="img-caption">Chamber Throat</div>
             </div>
           </div>
         </div>
@@ -137,17 +181,50 @@ function App() {
             working alongside senior engineers. Helped model motor mounts, planetary actuator housings, gear reduction stages, 
             and bevel gear assemblies. Assisted with actuator assembly layouts to verify component fit, alignment, and clearance.
           </p>
-          <div className="img-grid">
+          <div className="img-grid img-grid-2x2">
             <div 
               className="img-wrap" 
-              onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/87utk7i1_image.png")}
+              onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/j04sozmy_shoulder%20prototype%20%281%29.jpg")}
             >
               <img 
-                src="https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/87utk7i1_image.png" 
-                alt="Shoulder Actuator Assembly"
-                data-testid="robotic-arm-image"
+                src="https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/j04sozmy_shoulder%20prototype%20%281%29.jpg" 
+                alt="Full Assembly"
+                data-testid="robotic-arm-full-assembly"
               />
-              <div className="img-caption">Shoulder Actuator Assembly</div>
+              <div className="img-caption">Full Assembly</div>
+            </div>
+            <div 
+              className="img-wrap" 
+              onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/s7vmhsdj_robo-actuator.jpg")}
+            >
+              <img 
+                src="https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/s7vmhsdj_robo-actuator.jpg" 
+                alt="Planetary Actuator"
+                data-testid="robotic-arm-actuator"
+              />
+              <div className="img-caption">Planetary Actuator</div>
+            </div>
+            <div 
+              className="img-wrap" 
+              onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/kyq9xkx4_robo-bevel-gear.jpg")}
+            >
+              <img 
+                src="https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/kyq9xkx4_robo-bevel-gear.jpg" 
+                alt="Bevel Gears"
+                data-testid="robotic-arm-bevel-gear"
+              />
+              <div className="img-caption">Bevel Gears</div>
+            </div>
+            <div 
+              className="img-wrap" 
+              onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/tpu2zm3f_robo-reducer.jpg")}
+            >
+              <img 
+                src="https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/tpu2zm3f_robo-reducer.jpg" 
+                alt="Gear Reducer"
+                data-testid="robotic-arm-reducer"
+              />
+              <div className="img-caption">Gear Reducer</div>
             </div>
           </div>
         </div>
