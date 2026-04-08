@@ -1,76 +1,51 @@
 # Ashvik Rajeev Portfolio - PRD
 
 ## Original Problem Statement
-User wanted to create a portfolio from their existing HTML file and images. Specific requests:
-1. Remove the "exploded motor" (bevel gear assembly) picture
-2. Add a new picture of the "top orifice model" for the liquid rocket injector
+Convert an existing HTML portfolio into a modern React application. User provided `index.html` with 3 projects and 2 images. Requirements:
+- Remove "exploded motor" image
+- Add "top orifice model" image for Liquid Rocket Injector project
+- Include ALL projects from original HTML
 
 ## User Personas
-- **Primary**: Ashvik Rajeev - Sophomore Mechanical Engineering student at Northeastern University
-- **Target Audience**: Recruiters, hiring managers, engineering companies looking for co-op candidates
+- Ashvik Rajeev: Sophomore MechE student at Northeastern University (Class of 2028)
+- Target Audience: Potential employers, co-op recruiters for Fall 2026
 
-## Core Requirements (Static)
-- ✅ Hero section with name, university, and tagline
-- ✅ Skills bar highlighting SolidWorks, PTC Creo, and other technical skills
-- ✅ Projects section showcasing engineering work
-- ✅ About section with background and achievements
-- ✅ LinkedIn integration
-- ✅ Modern dark theme design
-- ✅ Responsive layout
-- ✅ Image lightbox for viewing project images
+## Core Requirements
+- [x] Dark theme portfolio design
+- [x] Hero section with name, tagline, and CTAs
+- [x] Skills bar with relevant engineering skills
+- [x] Projects section with all 3 projects
+- [x] About section with bio and stats
+- [x] Responsive design
+- [x] Image lightbox functionality
 
-## What's Been Implemented
-**Date: January 2026**
-
-### Features Completed:
-1. **Hero Section**
-   - Full-screen hero with animated background grid
-   - Name display with gradient accent
-   - University/program tagline
-   - CTA buttons (View Projects, LinkedIn)
-
-2. **Skills Bar**
-   - Horizontal scrollable skills list
-   - Highlighted key skills (SolidWorks, PTC Creo)
-   - Hover effects
-
-3. **Projects Section**
-   - Liquid Rocket Injector Assembly project
-   - Project description with badges (SolidWorks, Aerospace, Date)
-   - **Top Orifice Model image** (user's new image)
-   - Image lightbox on click
-
-4. **About Section**
-   - Biography text
-   - Stats grid (3+ CAD Projects, 2 CAD Platforms, 4 Part Assembly, 2× National Champion)
-
-5. **Design**
-   - Modern dark theme with green accent (#00d47e)
-   - JetBrains Mono + Outfit fonts
-   - Smooth animations and transitions
-   - Custom scrollbar styling
-
-### Changes Made Per User Request:
-- ❌ Removed: Bevel gear assembly / exploded motor image
-- ✅ Added: Top orifice model image for liquid rocket injector
+## What's Been Implemented (Jan 2026)
+- **Session 1**: Created React portfolio with dark theme, hero section, skills bar
+- **Session 2**: Added Top Orifice Model image, removed exploded motor
+- **Session 3**: Added all 3 projects from original HTML:
+  1. Liquid Rocket Injector Assembly (with image)
+  2. Tilt-a-Turt — Board Game Design (placeholder)
+  3. Robotic Arm — Shoulder Actuator Subsystem (placeholder)
 
 ## Prioritized Backlog
-### P0 (Not Needed for MVP - Complete)
-- None
+### P0 (Critical) - DONE
+- [x] All projects from HTML migrated
 
-### P1 (Future Enhancements)
-- Add more projects
-- Add contact form
-- Add resume download button
-- Add project filtering/categories
+### P1 (High Priority)
+- [ ] Add actual images for Tilt-a-Turt and Robotic Arm projects (user needs to provide)
+- [ ] Add contact form or email CTA
+- [ ] Resume download button
 
-### P2 (Nice to Have)
-- Dark/Light mode toggle
-- Animation on scroll (AOS effects)
-- Project detail pages
-- Skills proficiency indicators
+### P2 (Medium Priority)
+- [ ] Individual project detail modals/pages
+- [ ] Animation enhancements
+- [ ] SEO meta tags
 
-## Next Tasks
-1. User may want to add more project images
-2. User may want to add a contact form
-3. User may want to update resume/CV link
+## Architecture
+- Frontend: React.js
+- Styling: Custom CSS with CSS variables (dark theme)
+- No backend needed (static content)
+
+## Files
+- `/app/frontend/src/App.js` - Main portfolio component
+- `/app/frontend/src/App.css` - All styling

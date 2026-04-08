@@ -99,6 +99,49 @@ function App() {
             </div>
           </div>
         </div>
+
+        {/* Project 2: Tilt-a-Turt */}
+        <div className="project" data-testid="project-tilt-a-turt">
+          <div className="project-header">
+            <h3 className="project-title">Tilt-a-Turt — Board Game Design</h3>
+            <div className="project-meta">
+              <span className="badge badge-blue">3D Printing</span>
+              <span className="badge badge-orange">Team Project</span>
+              <span className="badge badge-gray">Engineering Design</span>
+            </div>
+          </div>
+          <p className="project-desc">
+            4-person team engineering design project. Designed and fabricated a tiltable marble maze board game from client brief 
+            to functional prototype. The board features magnetic removable walls with 4 unique geometries, laser-cut play surface 
+            with filleted marble holes, and a convex underside for gameplay challenge. All parts were 3D printed on a Prusa i3 MK3S 
+            within a 210×210mm build volume constraint. Presented functional prototype to a real client with positive feedback.
+          </p>
+          <div className="project-placeholder" data-testid="tilt-a-turt-placeholder">
+            <div className="placeholder-icon">🎮</div>
+            <div className="placeholder-text">Board Game Prototype</div>
+          </div>
+        </div>
+
+        {/* Project 3: Robotic Arm */}
+        <div className="project" data-testid="project-robotic-arm">
+          <div className="project-header">
+            <h3 className="project-title">Robotic Arm — Shoulder Actuator Subsystem</h3>
+            <div className="project-meta">
+              <span className="badge badge-green">SolidWorks</span>
+              <span className="badge badge-cyan">Robotics Club</span>
+              <span className="badge badge-gray">Northeastern</span>
+            </div>
+          </div>
+          <p className="project-desc">
+            Contributed SolidWorks CAD modeling to a robotic arm shoulder actuator subsystem as part of Northeastern's robotics club, 
+            working alongside senior engineers. Helped model motor mounts, planetary actuator housings, gear reduction stages, 
+            and bevel gear assemblies. Assisted with actuator assembly layouts to verify component fit, alignment, and clearance.
+          </p>
+          <div className="project-placeholder" data-testid="robotic-arm-placeholder">
+            <div className="placeholder-icon">🤖</div>
+            <div className="placeholder-text">Shoulder Actuator CAD Model</div>
+          </div>
+        </div>
       </section>
 
       {/* About Section */}
