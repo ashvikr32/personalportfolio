@@ -160,9 +160,51 @@ function App() {
             with filleted marble holes, and a convex underside for gameplay challenge. All parts were 3D printed on a Prusa i3 MK3S 
             within a 210×210mm build volume constraint. Presented functional prototype to a real client with positive feedback.
           </p>
-          <div className="project-placeholder" data-testid="tilt-a-turt-placeholder">
-            <div className="placeholder-icon">🎮</div>
-            <div className="placeholder-text">Board Game Prototype</div>
+          <div className="img-grid img-grid-2x2">
+            <div 
+              className="img-wrap" 
+              onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/c94usy4q_tilt-play-surface.jpg")}
+            >
+              <img 
+                src="https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/c94usy4q_tilt-play-surface.jpg" 
+                alt="Play Surface"
+                data-testid="tilt-play-surface"
+              />
+              <div className="img-caption">Play Surface</div>
+            </div>
+            <div 
+              className="img-wrap" 
+              onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/rn0vveqk_tilt-convex-underside.jpg")}
+            >
+              <img 
+                src="https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/rn0vveqk_tilt-convex-underside.jpg" 
+                alt="Convex Underside"
+                data-testid="tilt-convex-underside"
+              />
+              <div className="img-caption">Convex Underside</div>
+            </div>
+            <div 
+              className="img-wrap" 
+              onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/10fhgt0v_tilt-wall-geometry.jpg")}
+            >
+              <img 
+                src="https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/10fhgt0v_tilt-wall-geometry.jpg" 
+                alt="Wall Geometry"
+                data-testid="tilt-wall-geometry"
+              />
+              <div className="img-caption">Wall Geometry</div>
+            </div>
+            <div 
+              className="img-wrap" 
+              onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/mxhlopwj_tilt-wall-section.jpg")}
+            >
+              <img 
+                src="https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/mxhlopwj_tilt-wall-section.jpg" 
+                alt="Wall Section"
+                data-testid="tilt-wall-section"
+              />
+              <div className="img-caption">Wall Section</div>
+            </div>
           </div>
         </div>
 
