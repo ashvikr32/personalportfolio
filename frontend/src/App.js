@@ -1,0 +1,152 @@
+import { useState, useEffect } from "react";
+import "@/App.css";
+
+function App() {
+  const [lightboxImage, setLightboxImage] = useState(null);
+
+  const openLightbox = (src) => {
+    setLightboxImage(src);
+  };
+
+  const closeLightbox = () => {
+    setLightboxImage(null);
+  };
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        closeLightbox();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
+  return (
+    <div className="portfolio-app">
+      {/* Lightbox */}
+      {lightboxImage && (
+        <div className="lightbox" data-testid="lightbox" onClick={closeLightbox}>
+          <span className="lightbox-close" data-testid="lightbox-close">✕</span>
+          <img src={lightboxImage} alt="Enlarged view" />
+        </div>
+      )}
+
+      {/* Hero Section */}
+      <section className="hero" data-testid="hero-section">
+        <div className="hero-grid"></div>
+        <div className="hero-glow"></div>
+        <div className="hero-content">
+          <div className="hero-tag">Mechanical Engineering · Northeastern University</div>
+          <h1>Ashvik<br /><span>Rajeev</span></h1>
+          <p className="hero-sub">
+            Sophomore MechE with hands-on experience in CAD modeling, materials testing, and design-to-manufacture. Proficient in SolidWorks and PTC Creo.
+          </p>
+          <div className="hero-links">
+            <a href="#projects" className="btn btn-primary" data-testid="view-projects-btn">View Projects</a>
+            <a href="https://www.linkedin.com/in/ashvik-rajeev-b60289260/" target="_blank" rel="noopener noreferrer" className="btn btn-outline" data-testid="linkedin-btn">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+
+      {/* Skills Bar */}
+      <div className="skills-bar" data-testid="skills-bar">
+        <span className="skill-tag highlight">SolidWorks</span>
+        <span className="skill-tag highlight">PTC Creo</span>
+        <span className="skill-tag">AutoCAD</span>
+        <span className="skill-tag">3D Printing</span>
+        <span className="skill-tag">Laser Cutting</span>
+        <span className="skill-tag">MATLAB</span>
+        <span className="skill-tag">Instron Testing</span>
+        <span className="skill-tag">Python</span>
+        <span className="skill-tag">Material Testing</span>
+        <span className="skill-tag">Error Analysis</span>
+      </div>
+
+      {/* Projects Section */}
+      <section id="projects" data-testid="projects-section">
+        <div className="section-label">Work</div>
+        <h2 className="section-title">Projects</h2>
+
+        {/* Project 1: Rocket Injector */}
+        <div className="project" data-testid="project-rocket-injector">
+          <div className="project-header">
+            <h3 className="project-title">Liquid Rocket Injector Assembly</h3>
+            <div className="project-meta">
+              <span className="badge badge-green">SolidWorks</span>
+              <span className="badge badge-purple">Aerospace</span>
+              <span className="badge badge-gray">Dec 2025 – Present</span>
+            </div>
+          </div>
+          <p className="project-desc">
+            Recreated a 4-part liquid rocket fuel injector assembly in SolidWorks from engineering drawings. 
+            The injector operates at 100–200 psi and uses Inconel 718 for thermal stability. 
+            Built parametric models of the top manifold, base manifold, table top orifices, and converging-diverging chamber throat, 
+            then assembled with concentric and coincident mates. Applied circular patterns for the 30-element impinging orifice layout 
+            and used spline curves and Shell feature for the complex nozzle geometry.
+          </p>
+          <div className="img-grid img-grid-featured">
+            <div 
+              className="img-wrap span-2" 
+              onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/gioe6696_image.png")}
+            >
+              <img 
+                src="https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/gioe6696_image.png" 
+                alt="Top Orifice Model for Liquid Rocket Injector"
+                data-testid="rocket-injector-image"
+              />
+              <div className="img-caption">Top Orifice Model for Liquid Rocket Injector</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" data-testid="about-section">
+        <div className="section-label">Background</div>
+        <h2 className="section-title">About</h2>
+        <div className="about-grid">
+          <div className="about-text">
+            <p>
+              I'm a <strong>sophomore Mechanical Engineering student at Northeastern University</strong> (Class of 2028), actively pursuing a co-op for Fall 2026. My coursework includes Mechanics of Materials, Thermodynamics, Dynamics, and Materials Science.
+            </p>
+            <p>
+              My hands-on experience spans <strong>parametric CAD modeling</strong> in SolidWorks and PTC Creo, <strong>materials testing</strong> using Instron systems, and <strong>design-to-manufacture</strong> with 3D printing and laser cutting.
+            </p>
+            <p>
+              In my Mechanics of Materials lab, I conducted tensile, torsion, bending, and buckling tests to extract Young's modulus, yield strength, and ultimate strength — validating results against theoretical models using MATLAB.
+            </p>
+            <p>
+              Outside of engineering, I'm a <strong>2× Marching Band National Champion</strong> saxophonist with 9+ years of experience in competitive performance ensembles.
+            </p>
+          </div>
+          <div className="stats-grid">
+            <div className="stat-box">
+              <div className="stat-num">3+</div>
+              <div className="stat-label">CAD Projects</div>
+            </div>
+            <div className="stat-box">
+              <div className="stat-num">2</div>
+              <div className="stat-label">CAD Platforms</div>
+            </div>
+            <div className="stat-box">
+              <div className="stat-num">4</div>
+              <div className="stat-label">Part Assembly</div>
+            </div>
+            <div className="stat-box">
+              <div className="stat-num">2×</div>
+              <div className="stat-label">National Champion</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="footer" data-testid="footer">
+        <p>© 2026 Ashvik Rajeev. Built with React.</p>
+      </footer>
+    </div>
+  );
+}
+
+export default App;
