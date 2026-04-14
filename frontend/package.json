@@ -65,6 +65,7 @@
     "zod": "^3.24.4"
   },
   "scripts": {
+    "postinstall": "rm -rf node_modules/fork-ts-checker-webpack-plugin",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test"
