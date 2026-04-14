@@ -65,7 +65,7 @@
     "zod": "^3.24.4"
   },
   "scripts": {
-    "postinstall": "rm -rf node_modules/fork-ts-checker-webpack-plugin && mkdir -p node_modules/fork-ts-checker-webpack-plugin && echo '{\"name\":\"fork-ts-checker-webpack-plugin\",\"version\":\"6.5.3\",\"main\":\"index.js\"}' > node_modules/fork-ts-checker-webpack-plugin/package.json && echo 'class ForkTsCheckerWebpackPlugin { apply() {} } module.exports = ForkTsCheckerWebpackPlugin; module.exports.default = ForkTsCheckerWebpackPlugin;' > node_modules/fork-ts-checker-webpack-plugin/index.js",
+    "postinstall": "node scripts/patch-ajv.js",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test"
