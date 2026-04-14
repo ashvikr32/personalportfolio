@@ -160,7 +160,18 @@ function App() {
             with filleted marble holes, and a convex underside for gameplay challenge. All parts were 3D printed on a Prusa i3 MK3S 
             within a 210×210mm build volume constraint. Presented functional prototype to a real client with positive feedback.
           </p>
-          <div className="img-grid img-grid-2x2">
+          <div className="img-grid img-grid-tilt">
+            <div 
+              className="img-wrap img-featured" 
+              onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/86ljf51m_Manufactured%20Model.png")}
+            >
+              <img 
+                src="https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/86ljf51m_Manufactured%20Model.png" 
+                alt="Manufactured Model"
+                data-testid="tilt-manufactured-model"
+              />
+              <div className="img-caption">Manufactured Model</div>
+            </div>
             <div 
               className="img-wrap" 
               onClick={() => openLightbox("https://customer-assets.emergentagent.com/job_portfolio-converter-5/artifacts/c94usy4q_tilt-play-surface.jpg")}
